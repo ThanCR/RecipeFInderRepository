@@ -72,7 +72,7 @@ ul{
     display: block;
     position: relative;
     height: 5px;
-    width: 98%;
+    width: 87%;
     margin-bottom: 2px;
     margin-top: 2px;
     background-color: var(--green);
@@ -96,6 +96,26 @@ ul{
 }
 .navLink:hover{
     color: var(--white);
+}
+
+/* Responsive NavBar for smaller screens */
+@media (max-width: 768px) {
+    .navBar{
+        flex-direction: column;
+    }
+    .navBar-logo{
+        padding: 0;
+        margin: 0;
+    }
+    .navLink{
+        margin: 0;
+        
+    }
+    .navList{
+        flex-direction: column;
+        text-align: center;
+    }
+    
 }
 
 /* Main styles */
