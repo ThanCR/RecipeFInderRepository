@@ -102,18 +102,28 @@ ul{
 @media (max-width: 768px) {
     .navBar{
         flex-direction: column;
+        padding-left: 10rem;
+        width: 100%;
+        max-width: 100%;
     }
     .navBar-logo{
         padding: 0;
         margin: 0;
+        margin-left: 1rem;
+        width: 6.5rem;
+        min-width: 6.5rem;
+    }
+    .navBar-logo span:nth-of-type(2)::before{
+        width: 95%;
     }
     .navLink{
         margin: 0;
-        
+        font-size: 1.3rem;
     }
     .navList{
         flex-direction: column;
         text-align: center;
+        padding: 0;
     }
     
 }
