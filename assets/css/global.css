@@ -1,0 +1,54 @@
+:root{
+    --pink:     #BF88BC;
+    --green:    #9CA653;
+    --orange:   #F2A444;
+    --brown:    #8C5C4A;
+    --darkBrown:#4D3229;
+    --lightBrown:#D9BEB4;
+    --white:    #F2F2F2;
+    --black:#111111;
+/* Color Theme Swatches in RGBA
+.Sabor-1-rgba { color: rgba(191, 135, 187, 1); }
+.Sabor-2-rgba { color: rgba(156, 165, 82, 1); }
+.Sabor-3-rgba { color: rgba(242, 163, 67, 1); }
+.Sabor-4-rgba { color: rgba(140, 91, 74, 1); }
+.Sabor-5-rgba { color: rgba(242, 242, 242, 1); } */
+
+}
+body{
+    font-size: 62.25%;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+h1{
+    font-size: 3rem;
+    margin: 0;
+}
+h2{
+    font-size: 2.5rem;
+    margin: 0;
+}
+h3,h4,h5,h6{
+    font-size: 2rem;
+}
+p{
+    font-size: 1.8rem;
+    margin: 0;
+}
+ul{
+    list-style: none;
+}
+
+
+/* Main styles */
+.main{
+    display: flex;
+    flex-direction: column;
+}
+
+

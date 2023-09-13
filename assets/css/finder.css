@@ -1,0 +1,123 @@
+/* Finder section styles*/
+
+.finder{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    background-color: var(--black);
+    color: var(--white);
+}
+.finder-title{
+    letter-spacing: 5px;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: var(--white);
+}
+.search-div{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    align-self: flex-end;
+    margin-right: 5rem;
+}
+.search-input{
+    height: auto;
+    width: 15rem;
+    background-color: var(--black);
+    color: var(--orange);
+    border: 1px solid var(--orange);
+    border-radius: 10px;
+    padding: .7rem;
+    padding-right: 2rem;
+    font-weight: 700;
+    letter-spacing: 1.2px;
+}
+.search-input::placeholder{
+    color: var(--white);
+    opacity: 60%;
+}
+.search-div i {
+    width: 10%;
+    text-align: center;
+    margin-left: -1.8rem;
+    color: var(--orange);
+}
+
+.search-input:focus{
+    outline: none;
+}
+
+/* Results container styles */
+.results-container{
+    display: flex;
+    justify-content: center;
+    width: 90%;
+    padding-bottom: 5rem;
+}
+.results-list{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2,1fr);
+    padding: 0;
+}
+.result{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0 auto;
+    margin-top: 3rem;
+    border: .5px var(--white) solid;
+    border-radius: 10px;
+    cursor: pointer;
+    height: 14rem;
+    width: 15rem;
+    background-image: 
+        linear-gradient(rgba(0, 0, 0, 0.8),
+        rgba(0, 0, 0, 0.8)),
+        url("../images/recipe-image.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    transition: background-image ease 200ms;
+}
+.result:hover{
+    background-image: 
+        linear-gradient(rgba(242, 163, 67, .7),
+        rgba(242, 163, 67, .7)),
+        url("../images/recipe-image.jpg");
+}
+.recipeImage{
+    height: 25rem;
+    width: 100%;
+    border-radius: 10px;
+}
+.result-title{
+    font-size: 1rem;
+    color: var(--orange);
+    width: 50%;
+    font-weight: 500;
+    justify-self: flex-start;
+}
+.result-description{
+    font-size: .7rem;
+    padding-bottom: 3rem;
+    width: 95%;
+}
+@media (max-width: 1000px){
+    .results-list{
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 768px){
+    .search-div{
+        align-self: center;
+        margin-right: 4px;
+    }
+}

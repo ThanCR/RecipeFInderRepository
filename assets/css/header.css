@@ -1,0 +1,39 @@
+/* Title */
+.header{
+    text-align: center;
+    background-image: 
+        linear-gradient(rgba(0, 0, 0, 0.5),
+        rgba(0, 0, 0, 1)),
+        url("../images/cover-image.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    padding-bottom: 5rem;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.header-title{
+    color: var(--green);
+    font-weight: 700;
+    line-height: 3rem;
+    margin: 7rem 0rem 2rem 0rem;
+    text-transform: uppercase;
+}
+.header-subtitle{
+    color: var(--orange);
+    font-size: 1.4rem;
+    margin-bottom: 3rem;
+}
+
+@media (max-width: 768px){
+    .header-title{
+        font-size: 1.8rem;
+        width: 90%;
+    }
+    .header-subtitle{
+        width: 90%;
+        font-size: 0.9rem;
+    }
+}

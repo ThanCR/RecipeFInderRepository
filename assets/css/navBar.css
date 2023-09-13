@@ -1,0 +1,80 @@
+/* navBar styles */
+.navBar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0 1rem 0;
+}
+.navBar-logo{
+    font-weight: 300;
+    line-height: 2rem;
+    height: 6rem;
+    width: 7rem;
+    min-width: 7rem;
+    color: var(--white);
+    word-wrap: break-word;
+    cursor: pointer;
+}
+.navBar-logo span{
+    font-weight: 700;
+    color: var(--orange);
+}
+.navBar-logo span:nth-of-type(2)::before{
+    content: "";
+    display: block;
+    position: relative;
+    left: 10px;
+    height: 5px;
+    width: 87%;
+    margin-bottom: 2px;
+    margin-top: 2px;
+    background-color: var(--green);
+}
+.navBar-logo span:nth-of-type(3){
+    color: var(--white);
+    font-weight: 300;
+    letter-spacing: 2.6px;
+}
+.navList{
+    display: flex;
+    flex-direction: row;
+}  
+.navLink{
+    font-size: 1.5rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    cursor: pointer;
+    color: var(--orange);
+    transition: color 200ms ease;
+}
+.navLink:hover{
+    color: var(--white);
+}
+
+/* Responsive NavBar for smaller screens */
+@media (max-width: 1000px){
+    .recommendations-list{
+        flex-direction: column;
+    }
+}
+@media (max-width: 768px) {
+    .navBar{
+        flex-direction: column;
+        width: 100%;
+        max-width: 100%;
+    }
+    .navBar-logo span:nth-of-type(2)::before{
+        width: 85%;
+    }
+    .navLink{
+        margin: 0;
+        font-size: 1.3rem;
+        margin-top: .5rem;
+    }
+    .navList{
+        flex-direction: column;
+        text-align: center;
+        padding: 0;
+    }
+    
+}
