@@ -23,26 +23,23 @@
     padding: 0;
 }
 .recommendations-list_item{
-    background-image: 
-        linear-gradient(rgba(0, 0, 0, 0.5),
-        rgba(0, 0, 0, 0.5)),
-        url("../images/recipe-image.jpg");
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
     border-radius: .5rem;
     width: 15rem;
-    height: 14rem;
+    height: 20rem;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
     margin: 0 auto;
+    cursor: pointer;
 }
 .recommendations-list_item h3{
-    font-size: 1.3rem;
+    font-size: .8rem;
     text-align: center;
-    line-height: .2rem;
+    line-height: 1rem;
     color: var(--white);
 }
 .recommendations-list_item p {
@@ -57,7 +54,9 @@
     color: var(--white);
     width: 10%;
     position: relative;
+    bottom: 1rem;
     left: 6rem;
+
     transition: color ease 200ms;
 }
 .recommendations-list_item i:hover{
@@ -70,7 +69,7 @@
         justify-content: space-between;
     }
     .recommendations{
-        height: 60rem;
+        height: 80rem;
     }
     .recommendations-list_item{
         margin-bottom: 1rem;

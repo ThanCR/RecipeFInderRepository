@@ -113,11 +113,11 @@
         display: flex;
         flex-direction: column;
     }
-}
-
-@media (max-width: 768px){
     .search-div{
         align-self: center;
         margin-right: 4px;
     }
+}
+
+@media (max-width: 768px){
 }
