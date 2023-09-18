@@ -3,11 +3,12 @@
 .finder{
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     height: auto;
     background-color: var(--black);
     color: var(--white);
+    min-height: 30rem;
 }
 .finder-title{
     letter-spacing: 5px;
@@ -74,22 +75,12 @@
     border: .5px var(--white) solid;
     border-radius: 10px;
     cursor: pointer;
-    height: 14rem;
+    height: 16rem;
     width: 15rem;
-    background-image: 
-        linear-gradient(rgba(0, 0, 0, 0.8),
-        rgba(0, 0, 0, 0.8)),
-        url("../images/recipe-image.jpg");
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
     transition: background-image ease 200ms;
-}
-.result:hover{
-    background-image: 
-        linear-gradient(rgba(242, 163, 67, .7),
-        rgba(242, 163, 67, .7)),
-        url("../images/recipe-image.jpg");
 }
 .recipeImage{
     height: 25rem;
@@ -107,6 +98,15 @@
     font-size: .7rem;
     padding-bottom: 3rem;
     width: 95%;
+}
+.result i{
+    color: var(--white);
+    width: 10%;
+    transition: color ease 200ms;
+}
+.result i:hover{
+    color: var(--pink);
+    cursor: pointer;
 }
 @media (max-width: 1000px){
     .results-list{
